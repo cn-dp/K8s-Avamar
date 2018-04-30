@@ -1,7 +1,6 @@
 # Leveraging Avamar for File Level Backup of apps running on Kubernetes
 
 
-
 **Executive summary:**
 
 Kubernetes, as it is stated on kubernetes.io, provides
@@ -15,7 +14,8 @@ Kubernetes provides a PersistentVolume(PV) API which allows an application to
 consume storage. This storage could be NFS, iSCSI, or cloud-provider-specific
 storage. It is common that users need to back up the PersistentVolumes data,
 however there is a gap for doing so. Avamar provides a solution to overcome this
-gap by providing an efficient way for backing up PersistentVolumes data.
+gap by providing an efficient way of performing file level backups of PersistentVolumes
+data.
 
 **Why Avamar:**
 
@@ -110,7 +110,7 @@ server:
     name: nginx-svc
     spec:
     type: NodePort
-    ports: # These Ports need to be exposed for Avamar agent to comunicate with the Avamar server
+    ports: # These Ports need to be exposed for Avamar agent to communicate with the Avamar server
     - port: 22
         nodePort: 32050
         name: agentport
@@ -319,7 +319,7 @@ a backup the user must specify the path to backup.
 
 ![avamar-backup](images/avamar-backup.jpg)
 
-The below diagram shows the example we used to deployed Nginx StatefulSet with
+The below diagram shows the example we used to deploy Nginx StatefulSet with
 avamar agent running as a side car.
 
 ![avamar-sidecar](images/avamar-sidecar.jpg)
@@ -345,18 +345,17 @@ Once the backup is selected the user can chose the restore destination.
 
 **Conclusion**
 
-There are different ways of deploying avamar agent, however in this case we
+There are different ways of deploying Avamar agent, however in this case we
 chose StatefulSet because by definition StatefulSet Pods have a unique identity
 that is comprised of an ordinal, a stable network identity, and stable storage.
 The identity sticks to the Pod, regardless of which node it’s (re)scheduled on.
-This guarantees that once the avamar agent is registered with the avamar server
-it will always maintain its identity regardless of pods scheduling which insures
+This guarantees that once the Avamar agent is registered with the Avamar server
+it will always maintain its identity regardless of pods scheduling which ensures
 only 1 agent is registered for the given pod.
 
 Kubernetes is transforming from being used in experiments to a production grade
-infrastructure that powers production applications. We hope this paper shed some
-lights on how to leverage Avamar as a backup solutions for apps running on
-kubernetes.
+infrastructure that powers production applications. We hope this paper sheds some
+light on how to leverage Avamar as a backup solution for apps running on Kubernetes.
 
 **Reference:**
 
