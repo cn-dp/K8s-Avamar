@@ -3,19 +3,12 @@
 
 **Executive summary:**
 
-Kubernetes, as it is stated on kubernetes.io, provides
-a **container-centric** management environment. It orchestrates computing,
-networking, and storage infrastructure on behalf of user workloads. This
-provides much of the simplicity of Platform as a Service (PaaS) with the
-flexibility of Infrastructure as a Service (IaaS), and enables portability
-across infrastructure providers.
+Kubernetes was released in the summer of 2014 and since then has been growing dramatically to emerge as the defacto platform for container orchestration and management. Oftentimes data-protection is an afterthought, hence despite the huge growth in adoption, data protection for applications running on Kubernetes still lags behind. Therefore there is a need to develop solution that will enable Kubernetes administrators and developers to easily set up and configure data protection plans and policies for these containerized applications.
 
-Kubernetes provides a PersistentVolume(PV) API which allows an application to
-consume storage. This storage could be NFS, iSCSI, or cloud-provider-specific
-storage. It is common that users need to back up the PersistentVolumes data,
-however there is a gap for doing so. Avamar provides a solution to overcome this
-gap by providing an efficient way of performing file level backups of PersistentVolumes
-data.
+DELLEMC Avamar is a world-leading data protection product and designed to protect various client types. It is based on client-server architect. Avamar client is a lightweight software and available for cross platforms, including Linux, Windows, Mac, etc. it is like a system service. In traditional P2 environment Avamar client runs on physical hosts or VM and communicate with the Avamar server, Avamar administrator initiate backups and restores via Avamar UI.
+![avamar-backup](images/traditional-avamar.jpg)
+
+Moving the applications to a Kubernetes platform present a challenge to the Avamar administrator which this paper will address a way to overcome this challenge. The Avamar administrator needs to establish a method for deploying the Avamar client in Kubernetes and a way to establish communication between the client and the server.
 
 **Why Avamar:**
 
@@ -42,6 +35,8 @@ Combined with Data Domain, Avamar offers:
 -   Incremental-Forever backups
 
 **How to leverage Avamar:**
+
+Kubernetes provides a PersistentVolume (PV) API which allows an application to consume storage. This storage could be NFS, iSCSI, or cloud-provider-specific storage. It is common that users need to back up the PersistentVolume data, however there is a gap for doing so. Avamar provides a solution to overcome this gap by providing an efficient way for backing up PersistentVolume data.
 
 Building an application from modular containers means thinking about symbiotic
 groups of containers that cooperate to provide a service, not one container per
