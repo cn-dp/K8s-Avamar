@@ -5,10 +5,10 @@
 
 Kubernetes was released in the summer of 2014 and since then has been growing dramatically to emerge as the defacto platform for container orchestration and management. Oftentimes data-protection is an afterthought, hence despite the huge growth in adoption, data protection for applications running on Kubernetes still lags behind. Therefore there is a need to develop solution that will enable Kubernetes administrators and developers to easily set up and configure data protection plans and policies for these containerized applications.
 
-DELLEMC Avamar is a world-leading data protection product and designed to protect various client types. It is based on client-server architect. Avamar client is a lightweight software and available for cross platforms, including Linux, Windows, Mac, etc. it is like a system service. In traditional P2 environment Avamar client runs on physical hosts or VM and communicate with the Avamar server, Avamar administrator initiate backups and restores via Avamar UI.
+DELLEMC Avamar is a world-leading data protection product designed to protect various client types. It is based on client-server architect. Avamar client is a lightweight software and available for cross platforms, including Linux, Windows, Mac, etc. it is like a system service. In traditional P2 environment Avamar client runs on physical hosts or VM and communicate with the Avamar server, Avamar administrator initiate backups and restores via Avamar UI.
 ![avamar-backup](images/traditional-avamar.jpg)
 
-Moving the applications to a Kubernetes platform present a challenge to the Avamar administrator which this paper will address a way to overcome this challenge. The Avamar administrator needs to establish a method for deploying the Avamar client in Kubernetes and a way to establish communication between the client and the server.
+Moving the applications to a Kubernetes platform presents a challenge to the Avamar administrator which this paper will address a way to overcome this challenge. The Avamar administrator needs to establish a method for deploying the Avamar client in Kubernetes and a way to establish communication between the Avamar client and the Avamar server.
 
 **Why Avamar:**
 
