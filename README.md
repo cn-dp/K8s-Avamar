@@ -109,117 +109,54 @@ server:
     - port: 22
         nodePort: 32050
         name: agentport
-    - port: 7778
+    - port: 27000
         nodePort: 32051
         name: agentport1
-    - port: 7779
+    - port: 27001
         nodePort: 32052
         name: agentport2
-    - port: 7780
+    - port: 28002
         nodePort: 32053
         name: agentport3
-    - port: 7781
+    - port: 29000
         nodePort: 32054
         name: agentport4
-    - port: 9090
+    - port: 30001
         nodePort: 32055
         name: agentport5
-    - port: 9091
+    - port: 30002
         nodePort: 32056
         name: agentport6
-    - port : 9092
+    - port: 30101
         nodePort: 32057
         name: agentport7
-    - port: 9093
+    - port: 30102
         nodePort: 32058
         name: agentport8
-    - port: 2700
+    - port: 53
         nodePort: 32059
         name: agentport9
-    - port: 27001
+    - port: 123
         nodePort: 32060
         name: agentport10
-    - port: 27002
+    - port: 443
         nodePort: 32061
         name: agentport11
-    - port: 27003
+    - port: 3008
         nodePort: 32062
         name: agentport12
-    - port: 27004
+    - port: 8105
         nodePort: 32063
         name: agentport13
-    - port: 28000
+    - port: 8109
         nodePort: 32064
         name: agentport14
-    - port: 28001
+    - port: 8181
         nodePort: 32065
         name: agentport15
-    - port: 28002
+    - port: 8444
         nodePort: 32066
         name: agentport16
-    - port: 28003
-        nodePort: 32067
-        name: agentport17
-    - port: 28004
-        nodePort: 32068
-        name: agentport18
-    - port: 29000
-        nodePort: 32069
-        name: agentport19
-    - port: 30000
-        nodePort: 32070
-        name: agentport20
-    - port: 30001
-        nodePort: 32071
-        name: agentport21
-    - port: 30002
-        nodePort: 32072
-        name: agentport22
-    - port: 30003
-        nodePort: 32073
-        name: agentport23
-    - port: 30004
-        nodePort: 32074
-        name: agentport24
-    - port: 30102
-        nodePort: 32075
-        name: agentport25
-    - port: 30103
-        nodePort: 32076
-        name: agentport26
-    - port: 30104
-        nodePort: 32077
-        name: agentport27
-    - port: 30105
-        nodePort: 32078
-        name: agentport28
-    - port: 53
-        nodePort: 32079
-        name: agentport29
-    - port: 123
-        nodePort: 32080
-        name: agentport30
-    - port: 443
-        nodePort: 32081
-        name: agentport31
-    - port: 3008
-        nodePort: 32082
-        name: agentport32
-    - port: 8105
-        nodePort: 32083
-        name: agentport33
-    - port: 8109
-        nodePort: 32084
-        name: agentport34
-    - port: 8141
-        nodePort: 32085
-        name: agentport35
-    - port: 8181
-        nodePort: 32086
-        name: agentport36
-    - port: 8444
-        nodePort: 32087
-        name: agentport37
     - port: 8080
         nodePort: 30808
         name: nginx
