@@ -191,7 +191,6 @@ server:
             name: avamar
             ports: 
             - containerPort: 22
-            - containerPort: 8080
             - containerPort: 28002
             - containerPort: 30001
             - containerPort: 30002
@@ -207,7 +206,7 @@ server:
             - containerPort: 27001
             - containerPort: 29000
             - containerPort: 30101
-            - containerPort: 30103
+            - containerPort: 30102
             env:
             - name: NODE_IP
             valueFrom:
