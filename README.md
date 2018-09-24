@@ -293,3 +293,5 @@ light on how to leverage Avamar as a backup solution for apps running on Kuberne
 <https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/>
 
 <https://www.emc.com/collateral/TechnicalDocument/docu85219.pdf>
+
+<https://support.emc.com/docu88712_Dockerize-Avamar-Client-to-Protect-Container-Workloads.pdf?language=en_US>
